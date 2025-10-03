@@ -24,20 +24,25 @@
             $age = sanitise_input($_POST["age"]);
             $bookday = sanitise_input($_POST["bookday"]);
             $partysize = sanitise_input($_POST["partysize"]);
-
-        }
-        $species = isset($_POST["species"]);
-        $accom = isset($_POST["accom"]) ? $_POST["accom"] : [];
-        $food = isset($_POST["food"]);
+            $species = sanitise_input($_POST["species"]);
+            $booking = isset($_POST["booking"]) ? $_POST["booking"] : [];
+            $food = sanitise_input($_POST["food"]);
 
         echo "$firstname\n";
         echo "$lastname\n";
         echo "$age\n";
         echo "$bookday\n";
         echo "$partysize\n";
-        echo "$food\n"
+        echo "$food\n";
+        echo "$species\n";
+        echo "$booking\n";
+        
+        }
+
+
+        
 
 ?>
-
+</header>
 
 </body>
