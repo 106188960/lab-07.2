@@ -35,7 +35,7 @@
         echo "$partysize\n";
         echo "$food\n";
         echo "$species\n";
-        echo "$booking\n";
+        echo "$booking\n";         // need help printing out array, but array should be made.
         
         }
 
