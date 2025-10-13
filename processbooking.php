@@ -24,9 +24,9 @@
             $age = sanitise_input($_POST["age"]);
             $bookday = sanitise_input($_POST["bookday"]);
             $partysize = sanitise_input($_POST["partysize"]);
-            $species = sanitise_input($_POST["species"]);
-            $booking = isset($_POST["booking"]) ? $_POST["booking"] : [];
-            $food = sanitise_input($_POST["food"]);
+            $species = sanitise_input($_POST["species"]);                //radio button
+            $booking = isset($_POST["booking"]) ? $_POST["booking"] : [];          //checkbox, multiple options available
+            $food = sanitise_input($_POST["food"]);                      //drop down meny
 
         echo "$firstname\n";
         echo "$lastname\n";
